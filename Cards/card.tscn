@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://uh0lci0ns035"]
+
+[ext_resource type="Texture2D" uid="uid://hue3iymtsv4t" path="res://Images/card.png" id="1_n0g7k"]
+[ext_resource type="Script" path="res://Cards/card.gd" id="1_ygr6w"]
+[ext_resource type="Texture2D" uid="uid://bcaaxsog68f7b" path="res://Images/cat.png" id="2_04ixu"]
+[ext_resource type="FontFile" uid="uid://eey2n804vhwt" path="res://VCR_OSD_MONO_1.001.ttf" id="3_gomj8"]
+
+[node name="Card" type="MarginContainer"]
+offset_right = 610.0
+offset_bottom = 850.0
+pivot_offset = Vector2(306, 425)
+theme_override_constants/margin_left = -120
+theme_override_constants/margin_right = -120
+script = ExtResource("1_ygr6w")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 2
+
+[node name="Card Icon" type="TextureRect" parent="Control"]
+layout_mode = 2
+offset_top = 123.5
+offset_right = 610.0
+offset_bottom = 515.5
+texture = ExtResource("2_04ixu")
+stretch_mode = 3
+
+[node name="Card Base" type="TextureButton" parent="."]
+layout_mode = 2
+texture_normal = ExtResource("1_n0g7k")
+
+[node name="Name" type="Label" parent="Card Base"]
+layout_mode = 2
+offset_left = 33.0
+offset_top = 34.0
+offset_right = 575.0
+offset_bottom = 155.0
+theme_override_fonts/font = ExtResource("3_gomj8")
+theme_override_font_sizes/font_size = 81
+text = "Claw"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Card Base"]
+layout_mode = 2
+offset_left = 51.0
+offset_top = 458.0
+offset_right = 557.0
+offset_bottom = 822.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_gomj8")
+theme_override_font_sizes/normal_font_size = 41
+bbcode_enabled = true
+text = "[center]Deal [color=red]1[/color] damage"
+
+[connection signal="mouse_exited" from="." to="Card Base" method="_on_card_mouse_exited"]
+[connection signal="mouse_entered" from="Card Base" to="." method="_on_card_base_mouse_entered"]
+[connection signal="mouse_exited" from="Card Base" to="." method="_on_card_base_mouse_exited"]
+[connection signal="pressed" from="Card Base" to="." method="_on_card_base_pressed"]

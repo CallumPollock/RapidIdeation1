@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://boa814kgrs545"
+path="res://.godot/imported/onlymp3.to - trainer_battle___pokémon_red___blue_extended-yEKd5ebxg9M-192k-1698178349.mp3-4785c9cfc8ae757df95b44b4cd051961.mp3str"
+
+[deps]
+
+source_file="res://Audio/onlymp3.to - trainer_battle___pokémon_red___blue_extended-yEKd5ebxg9M-192k-1698178349.mp3"
+dest_files=["res://.godot/imported/onlymp3.to - trainer_battle___pokémon_red___blue_extended-yEKd5ebxg9M-192k-1698178349.mp3-4785c9cfc8ae757df95b44b4cd051961.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://cftvijkyu75fo"]
+
+[ext_resource type="PackedScene" uid="uid://uh0lci0ns035" path="res://Cards/card.tscn" id="1_7huot"]
+
+[node name="Hand" type="Control"]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -2343.0
+offset_top = -867.0
+offset_right = 1952.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Hand" type="HBoxContainer" parent="."]
+layout_mode = 2
+offset_right = 4686.0
+offset_bottom = 867.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="Card" parent="Hand" instance=ExtResource("1_7huot")]
+layout_mode = 2
+
+[node name="Card2" parent="Hand" instance=ExtResource("1_7huot")]
+layout_mode = 2
+
+[node name="Card3" parent="Hand" instance=ExtResource("1_7huot")]
+layout_mode = 2
+
+[node name="Card4" parent="Hand" instance=ExtResource("1_7huot")]
+layout_mode = 2
+
+[node name="Card5" parent="Hand" instance=ExtResource("1_7huot")]
+layout_mode = 2
+
+[node name="Card6" parent="Hand" instance=ExtResource("1_7huot")]
+layout_mode = 2
+
+[node name="Card7" parent="Hand" instance=ExtResource("1_7huot")]
+layout_mode = 2
